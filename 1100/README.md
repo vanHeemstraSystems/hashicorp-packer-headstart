@@ -66,12 +66,12 @@ Finally, let's address whitespace — notably, that with JSON it doesn't really 
 - Packer templates can be written in JSON.
 - JSON comprises objects and arrays.
 - Objects:
-* Are encased in braces ({ ... })
-* Have a colon after the name in a name/value pair (:)
-* Containing multiple pairs separate pairs with a comma (,)
+  * Are encased in braces ({ ... })
+  * Have a colon after the name in a name/value pair (:)
+  * Containing multiple pairs separate pairs with a comma (,)
 - Arrays:
-* Are encased in brackets ([ ... ])
-* Separate multiple items with commas (,)
+  * Are encased in brackets ([ ... ])
+  * Separate multiple items with commas (,)
 - Whitespace technically doesn't matter, but objects and arrays tend to be structured with tabs.
 
 ## 1100 HCL2 
