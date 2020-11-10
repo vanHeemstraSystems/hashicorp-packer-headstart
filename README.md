@@ -14,6 +14,8 @@ HashiCorp Packer is a lightweight open source tool for building automating machi
 
 00:01:54
 
+Welcome to the HashiCorp Packer course! Packer lets us create image builds with code. In this course, we'll take you from writing your very first Packer build to creating elaborate templates that let us build multiple machine images at once, across multiple platforms.
+
 ### 1000 Packer
 
 What Is Packer?
