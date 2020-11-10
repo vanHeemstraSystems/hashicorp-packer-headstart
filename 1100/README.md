@@ -143,8 +143,8 @@ Finally, one primary benefit of using HCL is the ability to add comments nativel
 
 ## 1200 Hands-On Lab: Formatting a Packer Template in JSON 
 
-00:15:00
+See [README.md](./1200/README.md)
 
 ## 1300 Hands-On Lab: Formatting a Packer Template in HCL2 
 
-00:10:00
+See [README.md](./1300/README.md)
