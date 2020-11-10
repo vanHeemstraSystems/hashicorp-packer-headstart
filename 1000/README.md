@@ -20,6 +20,15 @@ Packer will then take any templates we provide and produce an image, sending it 
 
 00:04:03
 
+Now that we know what Packer does, you might be wondering why we would use it over, say, spinning up a virtual machine and configuring the machine image that way. The answer lies in automation and the current tech landscape that values continuous integration and delivery. Packer — much like the configuration management programs you know and love — lets us write our desired outcome via text file. This doesn't just mean removing the need to access a VM itself to create a machine image — this also means we can create multiple machine images, as well as automate the creation, testing, and release of these images.
+
+Additionally, Packer lets us achieve the dev/prod parity and multi-cloud environment of our dreams by allowing us to configure our machine image to work cross-platform in a single template. This way, the end result will be the same even if we're creating a Docker image for our developers and an Amazon Machine Image for production.
+
+***Wrap Up***
+- Packer removes the need to individually configure machine images in favor of writing templates.
+- Packer templates fit in with existing automation pipelines.
+- Packer lets us work cross-platform and cross-environment — all with a single configuration.
+
 ## 1200 Packer Breakdown 
 [Watch](https://linuxacademy.com/cp/courses/lesson/course/6824/lesson/3/module/612)
 
