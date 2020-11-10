@@ -8,12 +8,12 @@ Course Details
 ## OVERVIEW
 HashiCorp Packer is a lightweight open source tool for building automating machine images across multiple platforms, including AWS, Azure, and GCP as well as popular virtualization or quasi-virtiualization platforms such as Docker and VirtualBox. In this course, we'll explore the core components of a Packer build, such as builders and communicators, then learn how to leverage these components to write portable buildfiles that work with the infrastructure we're already using -- such as platform, the provisioning toolchains -- and let us improve parity between our existing environments.
 
-## Welcome!
+### Welcome!
 
 About the Course
 00:01:54
 
-### Packer
+### 1000 Packer
 
 What Is Packer?
 00:03:38
@@ -24,7 +24,7 @@ Why Use Packer?
 Packer Breakdown
 00:05:36
 
-### Template Languages
+### 1100 Template Languages
 
 JSON
 00:06:26
@@ -40,7 +40,7 @@ Hands-On Lab:
 Formatting a Packer Template in HCL2
 00:10:00
 
-### Installation
+### 1200 Installation
 
 Linux Installation (Cloud Playground)
 00:05:23
@@ -55,7 +55,7 @@ Hands-On Lab:
 Setting Up Packer
 00:10:00
 
-### Environment
+### 1300 Environment
 
 Environment Configurations
 00:04:30
@@ -67,7 +67,7 @@ Hands-On Lab:
 Adding Packer Plugins
 00:10:00
 
-### Building a Base Template
+### 1400 Building a Base Template
 
 Builders
 00:16:54
@@ -82,7 +82,7 @@ Hands-On Lab:
 Using Packer to Create an AWS AMI
 00:30:00
 
-### Provisioning
+### 1500 Provisioning
 
 Bash
 00:08:42
@@ -126,7 +126,7 @@ Hands-On Lab:
 Provisioning a Packer Image with Masterless Salt
 00:30:00
 
-### Post-Processors
+### 1600 Post-Processors
 
 Post-Processors
 00:06:48
@@ -135,7 +135,7 @@ Hands-On Lab:
 Using the Docker Post-Processors with Packer
 00:15:00
 
-### Extending the Template
+### 1700 Extending the Template
 
 Parallel Builds
 00:12:56
@@ -151,7 +151,7 @@ Hands-On Lab:
 Using HCL with Packer
 00:30:00
 
-### Debugging
+### 1800 Debugging
 
 The `-debug` Flag
 00:08:23
@@ -163,7 +163,7 @@ Hands-On Lab:
 Debugging a Packer Build
 00:30:00
 
-### Cloud
+### 1900 Cloud
 
 Hands-On Lab:
 Building an Amazon EBS-Based Packer Image
@@ -177,7 +177,7 @@ Hands-On Lab:
 Building a Google Compute-Backed Image with Packer
 00:30:00
 
-### Containers
+### 2000 Containers
 
 Hands-On Lab:
 Building a Docker Image with Packer
@@ -194,6 +194,6 @@ Building a VirtualBox Image with Packer
 Building a Vagrant Box with Packer
 00:06:11
 
-### What's Next?
+### 2100 What's Next?
 Next Steps
 00:01:08
