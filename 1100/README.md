@@ -79,6 +79,68 @@ Finally, let's address whitespace — notably, that with JSON it doesn't really 
 
 00:08:38
 
+While the majority of Packer templates you encounter currently will be written in JSON, HashiCorp has released beta support for HCL2, or HashiCorp Configuration Language, most commonly associated with HashiCorp's other product, Terraform. This is done with the intention of having HCL take over from JSON as the primary configuration language for Packer.
+
+HCL itself is JSON-compatible, working as a "more human-readable" version than JSON's machine-friendly formatting.
+
+As with JSON, HCL is also made up of objects and arrays, although there are differences to the presentation. Where JSON relied on its objects always being encased in braces, HCL takes a more simplified approach, allowing for object blocks to first define a type, then provide attributes in simple name = "value" format, eliminating excessive quotation marks.
+
+So this JSON object:
+
+```
+{
+  "builders": [
+    {
+      "ami_name": "packer-test",
+      "region": "us-east-1",
+      "instance_type": "t2.micro"
+    }
+  ]
+}
+```
+
+Would become this in HCL:
+
+```
+source "amazon-ebs" "example" {
+  ami_name = "packer-test"
+  region = "us-east-1"
+  instance_type = "t2.micro"
+}
+```
+
+With source working as the type — the equivalent of defining the builders object above.
+
+Arrays, in contrast, work essentially the same, but instead of being leveraged to list multiple of any Packer component, lists are instead reserved for any lists in the attributes of a template. Lists can also be assigned in HCL by repeating the object name — this will add an item, not overwrite it:
+
+```
+service {
+    key = "value"
+}
+
+service {
+    key = "value"
+}
+```
+
+While the two core structures of a template remain the same in HCL as JSON, HCL also leverages a few different concepts and terms: attributes, blocks, and bodies.
+
+Attributes are a single configuration unit, such as ami_name = "packer-test", whereas blocks are a collection of these units, annotated with a block type, which we've already discussed. Finally, a collection of related blocks is a body. A template can comprise a single body or multiple, depending on the goals of the template.
+
+Finally, one primary benefit of using HCL is the ability to add comments natively. Since we'll be using Packer to write templates — templates that will undoubtedly be used by others — leaving comments when needed can be valuable to our templating. In fact, I struggled with annotating some of the initial JSON lesson because I couldn't use comments!
+
+***Wrap Up***
+- HCL also uses objects and arrays.
+  * Objects use a simplified structure:
+    - Assign name/value pairs with an equal sign (=), not a colon (:)
+    - No commas
+    - Names are unquoted
+  * Arrays remain mostly the same; can also be assigned via repeated object names
+- HCL templates are made up of:
+  * Attributes, which configure a single piece of the template
+  * Blocks, which comprise attributes assigned an overall type
+  * Bodies, which are made of related blocks
+
 ## 1200 Hands-On Lab: Formatting a Packer Template in JSON 
 
 00:15:00
