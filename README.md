@@ -13,7 +13,8 @@ HashiCorp Packer is a lightweight open source tool for building automating machi
 About the Course
 00:01:54
 
-Packer
+### Packer
+
 What Is Packer?
 00:03:38
 
@@ -23,7 +24,8 @@ Why Use Packer?
 Packer Breakdown
 00:05:36
 
-Template Languages
+### Template Languages
+
 JSON
 00:06:26
 
@@ -65,7 +67,8 @@ Hands-On Lab:
 Adding Packer Plugins
 00:10:00
 
-Building a Base Template
+### Building a Base Template
+
 Builders
 00:16:54
 
@@ -79,7 +82,8 @@ Hands-On Lab:
 Using Packer to Create an AWS AMI
 00:30:00
 
-Provisioning
+### Provisioning
+
 Bash
 00:08:42
 
@@ -122,7 +126,8 @@ Hands-On Lab:
 Provisioning a Packer Image with Masterless Salt
 00:30:00
 
-Post-Processors
+### Post-Processors
+
 Post-Processors
 00:06:48
 
@@ -130,7 +135,8 @@ Hands-On Lab:
 Using the Docker Post-Processors with Packer
 00:15:00
 
-Extending the Template
+### Extending the Template
+
 Parallel Builds
 00:12:56
 
@@ -145,7 +151,8 @@ Hands-On Lab:
 Using HCL with Packer
 00:30:00
 
-Debugging
+### Debugging
+
 The `-debug` Flag
 00:08:23
 
