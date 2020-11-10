@@ -10,7 +10,8 @@ HashiCorp Packer is a lightweight open source tool for building automating machi
 
 ### Welcome!
 
-About the Course
+[About the Course](https://linuxacademy.com/cp/courses/lesson/course/6823/lesson/1/module/612)
+
 00:01:54
 
 ### 1000 Packer
