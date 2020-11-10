@@ -33,3 +33,26 @@ Additionally, Packer lets us achieve the dev/prod parity and multi-cloud environ
 [Watch](https://linuxacademy.com/cp/courses/lesson/course/6824/lesson/3/module/612)
 
 00:05:36
+
+The majority of work we do with Packer will be contained in the templates we write. Before we start writing these, however, let's take the time to ensure we have the basic vocabulary and structuring information we need to succeed.
+
+A Packer template, at the very least, must have a builder assigned to it. A builder is what defines the platform we wish to build our image on, as well as any base configurations we need to work with that platform, such as API keys or image destinations.
+
+We can then define our various desired configurations for our image with a provisioner (or multiple provisioners!). If you're already using configuration management to enforce state on your servers, then Packer works with this as well, offering provisioners for all major configuration management platforms (as well as some less common). We also have the option to provide shell scripts and upload files directly, if we're working outside the scope of config management.
+
+Finally, once the build is done, we may want to provide instructions on what to do with the image itself or any other artifacts (which are the end result of a build). For this, we can add a post-processor. Post-processors tend to be closely tied to the builder — we wouldn't use the Amazon Import post-processor with the Microsoft Azure builder, for example.
+
+And all of this work is done via Packer through the use of a communicator. If working exclusively on *nix-based hosts, this isn't something you'll need to worry about — SSH is the default communicator and works in the majority of instances. However, if we're using Packer to provision Windows, we will need to switch this to the winrm communicator.
+
+These components are combined in our template to create a build — or a single machine image. A template can contain multiple builds that each produce their own machine image.
+
+And once our template is all finished? We'll leverage the packer command on the CLI to launch our image — this will work like any other command line command.
+
+***Wrap Up***
+- Packer templates comprise builders, provisioners, post-processors, and communicators.
+- Builders provide Packer platform configurations.
+- Provisioners provision the image using either the shell or a configuration management platform.
+- Post-processors run after the build to perform tasks with the resulting artifacts.
+- Communicators determine how Packer talks to the machine during image creation.
+- A build is the overall combination of configurations that result in an image.
+- An artifact is the result of a build.
